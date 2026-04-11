@@ -1,0 +1,464 @@
+[
+    {
+        "batch": "CSE-1",
+        "day": "Fri",
+        "time": 8,
+        "course": "OS Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Fri",
+        "time": 9,
+        "course": "DSA Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Fri",
+        "time": 10,
+        "course": "Web Technology",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 8,
+        "course": "DSA",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 9,
+        "course": "Maths",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 10,
+        "course": "Physics",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 11,
+        "course": "DSA Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 12,
+        "course": "Web Technology",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 14,
+        "course": "DBMS Lab",
+        "room": "Lab-A"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 14,
+        "course": "DBMS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 15,
+        "course": "OS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Mon",
+        "time": 16,
+        "course": "OS Lab",
+        "room": "Lab-A"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Thu",
+        "time": 8,
+        "course": "DBMS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Thu",
+        "time": 9,
+        "course": "OS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Thu",
+        "time": 10,
+        "course": "DSA",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Thu",
+        "time": 11,
+        "course": "Maths",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Thu",
+        "time": 12,
+        "course": "Physics",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 8,
+        "course": "DBMS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 9,
+        "course": "OS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 10,
+        "course": "Physics",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 11,
+        "course": "DBMS Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 12,
+        "course": "OS Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 14,
+        "course": "DSA",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 14,
+        "course": "DSA Lab",
+        "room": "Lab-A"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Tue",
+        "time": 15,
+        "course": "Maths",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 8,
+        "course": "DBMS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 9,
+        "course": "OS",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 10,
+        "course": "DSA",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 11,
+        "course": "Maths",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 12,
+        "course": "DBMS Lab",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 14,
+        "course": "Physics",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-1",
+        "day": "Wed",
+        "time": 15,
+        "course": "Web Technology",
+        "room": "R101"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Mon",
+        "time": 8,
+        "course": "Microprocessors",
+        "room": "R104"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Mon",
+        "time": 14,
+        "course": "CN",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Mon",
+        "time": 14,
+        "course": "CN Lab",
+        "room": "Lab-B"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Mon",
+        "time": 15,
+        "course": "AIML",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Thu",
+        "time": 8,
+        "course": "CN",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Tue",
+        "time": 8,
+        "course": "CN",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Tue",
+        "time": 9,
+        "course": "AIML",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Tue",
+        "time": 11,
+        "course": "CN Lab",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Tue",
+        "time": 14,
+        "course": "Microprocessors",
+        "room": "R103"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Wed",
+        "time": 8,
+        "course": "CN",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Wed",
+        "time": 9,
+        "course": "AIML",
+        "room": "R102"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Wed",
+        "time": 10,
+        "course": "Microprocessors",
+        "room": "R103"
+    },
+    {
+        "batch": "CSE-2",
+        "day": "Wed",
+        "time": 11,
+        "course": "CN Lab",
+        "room": "R102"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Mon",
+        "time": 8,
+        "course": "Compiler",
+        "room": "R102"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Mon",
+        "time": 14,
+        "course": "Cyber Security",
+        "room": "R105"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Tue",
+        "time": 8,
+        "course": "Cyber Security",
+        "room": "R105"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Tue",
+        "time": 14,
+        "course": "Compiler",
+        "room": "R102"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Wed",
+        "time": 8,
+        "course": "Cyber Security",
+        "room": "R105"
+    },
+    {
+        "batch": "ECE-1",
+        "day": "Wed",
+        "time": 10,
+        "course": "Compiler",
+        "room": "R102"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Mon",
+        "time": 8,
+        "course": "Networks",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Mon",
+        "time": 14,
+        "course": "SE",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Mon",
+        "time": 15,
+        "course": "Cloud Computing",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Tue",
+        "time": 8,
+        "course": "SE",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Tue",
+        "time": 9,
+        "course": "Cloud Computing",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Tue",
+        "time": 15,
+        "course": "Networks",
+        "room": "R102"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Wed",
+        "time": 8,
+        "course": "SE",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Wed",
+        "time": 9,
+        "course": "Cloud Computing",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-1",
+        "day": "Wed",
+        "time": 11,
+        "course": "Networks",
+        "room": "R103"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Mon",
+        "time": 14,
+        "course": "TOC",
+        "room": "R104"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Mon",
+        "time": 15,
+        "course": "IoT",
+        "room": "R104"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Tue",
+        "time": 8,
+        "course": "TOC",
+        "room": "R104"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Tue",
+        "time": 9,
+        "course": "IoT",
+        "room": "R104"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Wed",
+        "time": 8,
+        "course": "TOC",
+        "room": "R104"
+    },
+    {
+        "batch": "IT-2",
+        "day": "Wed",
+        "time": 9,
+        "course": "IoT",
+        "room": "R104"
+    }
+]
