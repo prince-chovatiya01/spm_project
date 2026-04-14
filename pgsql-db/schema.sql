@@ -1,9 +1,10 @@
 -- =========================
--- DROP (for clean reset)
+-- RESET DATABASE (SAFE RE-RUN)
 -- =========================
 DROP TABLE IF EXISTS timetable CASCADE;
 DROP TABLE IF EXISTS conflicts CASCADE;
 DROP TABLE IF EXISTS constraint_rules CASCADE;
+DROP TABLE IF EXISTS faculty_availability CASCADE;
 DROP TABLE IF EXISTS faculty CASCADE;
 DROP TABLE IF EXISTS course CASCADE;
 DROP TABLE IF EXISTS batch CASCADE;
@@ -24,7 +25,7 @@ CREATE TABLE faculty (
 CREATE TABLE course (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    lectures_per_week INT NOT NULL,
+    lectures_per_week INT NOT NULL CHECK (lectures_per_week > 0),
     is_lab BOOLEAN DEFAULT FALSE
 );
 
@@ -34,7 +35,7 @@ CREATE TABLE course (
 CREATE TABLE batch (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
-    size INT NOT NULL
+    size INT NOT NULL CHECK (size > 0)
 );
 
 -- =========================
@@ -42,8 +43,8 @@ CREATE TABLE batch (
 -- =========================
 CREATE TABLE room (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(50),
-    capacity INT NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    capacity INT NOT NULL CHECK (capacity > 0),
     is_lab BOOLEAN DEFAULT FALSE
 );
 
@@ -52,9 +53,20 @@ CREATE TABLE room (
 -- =========================
 CREATE TABLE timeslot (
     id SERIAL PRIMARY KEY,
-    day VARCHAR(20),
-    start_time TIME,
-    end_time TIME
+    day VARCHAR(20) NOT NULL,
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    CHECK (start_time < end_time)
+);
+
+-- =========================
+-- FACULTY AVAILABILITY
+-- =========================
+CREATE TABLE faculty_availability (
+    id SERIAL PRIMARY KEY,
+    faculty_id INT REFERENCES faculty(id) ON DELETE CASCADE,
+    timeslot_id INT REFERENCES timeslot(id) ON DELETE CASCADE,
+    UNIQUE (faculty_id, timeslot_id)
 );
 
 -- =========================
@@ -71,11 +83,14 @@ CREATE TABLE constraint_rules (
 -- =========================
 CREATE TABLE timetable (
     id SERIAL PRIMARY KEY,
-    course_id INT REFERENCES course(id),
-    faculty_id INT REFERENCES faculty(id),
-    batch_id INT REFERENCES batch(id),
-    room_id INT REFERENCES room(id),
-    timeslot_id INT REFERENCES timeslot(id)
+    course_id INT REFERENCES course(id) ON DELETE CASCADE,
+    faculty_id INT REFERENCES faculty(id) ON DELETE CASCADE,
+    batch_id INT REFERENCES batch(id) ON DELETE CASCADE,
+    room_id INT REFERENCES room(id) ON DELETE CASCADE,
+    timeslot_id INT REFERENCES timeslot(id) ON DELETE CASCADE,
+    UNIQUE (batch_id, timeslot_id),
+    UNIQUE (faculty_id, timeslot_id),
+    UNIQUE (room_id, timeslot_id)
 );
 
 -- =========================
@@ -84,5 +99,13 @@ CREATE TABLE timetable (
 CREATE TABLE conflicts (
     id SERIAL PRIMARY KEY,
     type VARCHAR(100),
-    description TEXT
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- =========================
+-- INDEXES (PERFORMANCE)
+-- =========================
+CREATE INDEX idx_timetable_batch ON timetable(batch_id);
+CREATE INDEX idx_timetable_faculty ON timetable(faculty_id);
+CREATE INDEX idx_timetable_room ON timetable(room_id);
